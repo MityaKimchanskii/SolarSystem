@@ -13,6 +13,9 @@
 		3B3FA1402790CEE10073173C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FA13E2790CEE10073173C /* Main.storyboard */; };
 		3B3FA1422790CEE50073173C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FA1412790CEE50073173C /* Assets.xcassets */; };
 		3B3FA1452790CEE50073173C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FA1432790CEE50073173C /* LaunchScreen.storyboard */; };
+		3B3FA14D2790CF050073173C /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FA14C2790CF050073173C /* Planet.swift */; };
+		3B3FA14F2790D0AC0073173C /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FA14E2790D0AC0073173C /* PlanetController.swift */; };
+		3B3FA1572790D7170073173C /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FA1562790D7170073173C /* PlanetsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3B3FA1412790CEE50073173C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3FA1442790CEE50073173C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B3FA1462790CEE50073173C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3FA14C2790CF050073173C /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		3B3FA14E2790D0AC0073173C /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		3B3FA1562790D7170073173C /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		3B3FA1372790CEE10073173C /* SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
-				3B3FA1382790CEE10073173C /* AppDelegate.swift */,
-				3B3FA13A2790CEE10073173C /* SceneDelegate.swift */,
-				3B3FA13C2790CEE10073173C /* ViewController.swift */,
-				3B3FA13E2790CEE10073173C /* Main.storyboard */,
-				3B3FA1412790CEE50073173C /* Assets.xcassets */,
-				3B3FA1432790CEE50073173C /* LaunchScreen.storyboard */,
-				3B3FA1462790CEE50073173C /* Info.plist */,
+				3B3FA1532790D4850073173C /* Sources */,
+				3B3FA1502790D45F0073173C /* Model */,
+				3B3FA1522790D4720073173C /* View */,
+				3B3FA1512790D4680073173C /* Controller */,
 			);
 			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		3B3FA1502790D45F0073173C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA14C2790CF050073173C /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B3FA1512790D4680073173C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA1542790D4E20073173C /* ModelControllers */,
+				3B3FA1552790D4F40073173C /* ViewControllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B3FA1522790D4720073173C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA1432790CEE50073173C /* LaunchScreen.storyboard */,
+				3B3FA13E2790CEE10073173C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B3FA1532790D4850073173C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA1382790CEE10073173C /* AppDelegate.swift */,
+				3B3FA13A2790CEE10073173C /* SceneDelegate.swift */,
+				3B3FA1462790CEE50073173C /* Info.plist */,
+				3B3FA1412790CEE50073173C /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3B3FA1542790D4E20073173C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA14E2790D0AC0073173C /* PlanetController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		3B3FA1552790D4F40073173C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FA13C2790CEE10073173C /* ViewController.swift */,
+				3B3FA1562790D7170073173C /* PlanetsTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +198,9 @@
 				3B3FA13D2790CEE10073173C /* ViewController.swift in Sources */,
 				3B3FA1392790CEE10073173C /* AppDelegate.swift in Sources */,
 				3B3FA13B2790CEE10073173C /* SceneDelegate.swift in Sources */,
+				3B3FA14D2790CF050073173C /* Planet.swift in Sources */,
+				3B3FA1572790D7170073173C /* PlanetsTableViewController.swift in Sources */,
+				3B3FA14F2790D0AC0073173C /* PlanetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SolarSystem/Info.plist;
+				INFOPLIST_FILE = SolarSystem/Sources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SolarSystem/Info.plist;
+				INFOPLIST_FILE = SolarSystem/Sources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
